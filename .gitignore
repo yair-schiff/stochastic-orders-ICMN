@@ -1,0 +1,8 @@
+.DS_Store
+.ipynb_checkpoints/
+.idea/
+*__pycache__*
+
+saved_models/
+saved_data/
+lightning_logs/

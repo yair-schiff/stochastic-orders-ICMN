@@ -1,0 +1,30 @@
+name: gmorder_env
+channels:
+  - defaults
+  - anaconda
+  - conda-forge
+  - pytorch
+dependencies:
+  - cudatoolkit=11.3
+  - ffmpeg
+  - ipykernel
+  - notebook
+  - numpy
+  - pillow
+  - pip=21.2.4
+  - python=3.8
+  - pytorch::pytorch=1.11.0
+  - pytorch::torchaudio
+  - pytorch::torchvision
+  - pip:
+    - ipdb==0.13.9
+    - ipywidgets==7.6.5
+    - matplotlib==3.5.1
+    - pytorch-fid==0.2.1
+    - pytorch-lightning==1.5.10
+    - scikit-learn==1.0.2
+    - seaborn==0.11.2
+    - tensorboard==2.8.0
+    - torchmetrics==0.7.0
+    - torch-fidelity==0.3.0
+    - tqdm==4.62.3
