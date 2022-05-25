@@ -9,9 +9,9 @@ conda activate gmorder_env
 ```
 
 ## 1. Instructions to run 1D portfolio optimization
-To run the 1D portfolio optimization experiment open and execute the [`portfolio_optimization`](notebooks/portfolio_optimization.ipynb) notebook. 
+To run the 1D portfolio optimization experiment open and execute the [`portfolio_optimization`](notebooks/portfolio_optimization.ipynb) notebook.
 
-## 2. Generative modeling with d<sub>CT
+## 2. Generative modeling with d<sub>CT</sub>
 <p float="left">
     <img src="assets/swiss_roll.gif" alt="swiss roll training" width="150px"/>
     <img src="assets/gaussians.gif" alt="gaussians training" width="150px"/>
@@ -29,10 +29,16 @@ Open this script and change `data` (Line 7) to one of `circle_of_gaussians`, `sw
 <img src="assets/cifar10_vdc.png" alt="CIFAR10 generation" width="300px"/>
 </p>
 
+|  | FID |
+--|--
+| g<sub>0</sub>: WGAN-GP | 69.67 |
+| g<sup>*</sup>: WGAN-GP + VDC  | **67.317** ± 0.776 |
+
 To train a baseline WGAN-GP model run
 ```shell
 sh run_wgan_train_images.sh
 ```
+
 
 Once training is complete, to reproduce the WGAN-GP + VDC results from the paper, execute:
 ```shell
@@ -47,7 +53,7 @@ For several of our generator, discriminator, and Choquet critics, we draw inspir
 3. https://github.com/CW-Huang/CP-Flow
 
 ## Citation:
-To cite our work please use: TODO: need bibtex citation here 
+To cite our work please use: TODO: need bibtex citation here
 ```
 @article{name,
   title={Learning with Stochastic Orders},
