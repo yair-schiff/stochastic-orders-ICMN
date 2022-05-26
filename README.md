@@ -8,11 +8,15 @@ conda env create -f gmorder_env.yml
 conda activate gmorder_env
 ```
 
+Note, if installing this environment on macOS, remove the `cudatoolkits` dependency from [`gmorder_env.yml`](./gmorder_env.yml) as [CUDA no longer supports macOS](https://developer.nvidia.com/nvidia-cuda-toolkit-11_7_0-developer-tools-mac-hosts).
+Additionally, for running generative modeling training on larger datasets, such as CIFAR-10, you will need to ensure that `device` is set to `cpu`, e.g., in [`run_wgan_train_images.sh`](./run_wgan_train_images.sh) and [`run_wgan_dominate_images.sh`](./run_wgan_dominate_images.sh).
+
+
 ## 1. Instructions to run 1D portfolio optimization
 To run the 1D portfolio optimization experiment open and execute the [`portfolio_optimization`](notebooks/portfolio_optimization.ipynb) notebook.
 
 ## 2. Generative modeling with d<sub>CT</sub>
-<p float="left">
+<p>
     <img src="assets/swiss_roll.gif" alt="swiss roll training" width="150px"/>
     <img src="assets/gaussians.gif" alt="gaussians training" width="150px"/>
     <img src="assets/github.gif" alt="github icon training" width="150px"/>
@@ -25,7 +29,7 @@ sh run_choquet_train_distributions.sh
 Open this script and change `data` (Line 7) to one of `circle_of_gaussians`, `swiss_roll`, `image_point_cloud`.
 
 ## 3. Baseline generator domination with VDC
-<p float="center">
+<p>
 <img src="assets/cifar10_vdc.png" alt="CIFAR10 generation" width="300px"/>
 </p>
 
@@ -47,8 +51,8 @@ sh run_wgan_dominate_images.sh
 If needed, change file paths in this script to point to where the WGAN-GP checkpoint file and hyperparameter args are saved.
 
 ## Acknowledgements
-For several of our generator, discriminator, and Choquet critics, we draw inspiration and leverage code from the following public Github repositories:
-1. https://github.com/caogang/wgan-gp,
+For several of our generator, discriminator, and Choquet critics, we draw inspiration and leverage code from the following public GitHub repositories:
+1. https://github.com/caogang/wgan-gp
 2. https://github.com/ozanciga/gans-with-pytorch
 3. https://github.com/CW-Huang/CP-Flow
 
