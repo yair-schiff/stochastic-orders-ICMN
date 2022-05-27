@@ -8,8 +8,8 @@ conda env create -f gmorder_env.yml
 conda activate gmorder_env
 ```
 
-Note, if installing this environment on macOS, remove the `cudatoolkits` dependency from [`gmorder_env.yml`](./gmorder_env.yml) as [CUDA no longer supports macOS](https://developer.nvidia.com/nvidia-cuda-toolkit-11_7_0-developer-tools-mac-hosts).
-Additionally, for running generative modeling training on larger datasets, such as CIFAR-10, you will need to ensure that `device` is set to `cpu`, e.g., in [`run_wgan_train_images.sh`](./run_wgan_train_images.sh) and [`run_wgan_dominate_images.sh`](./run_wgan_dominate_images.sh).
+Note, if installing this environment on macOS, remove the `cudatoolkits` dependency from [`gmorder_env.yml`](https://github.com/yair-schiff/stochastic-orders-ICMN/blob/f8b6e8d2dee74ce65fc5ceeb594a3dccb3f1911c/gmorder_env.yml#L8) as [CUDA no longer supports macOS](https://developer.nvidia.com/nvidia-cuda-toolkit-11_7_0-developer-tools-mac-hosts).
+Additionally, for running generative modeling training on larger datasets, such as CIFAR-10, you will need to ensure that `device` is set to `cpu`, e.g., in [`run_wgan_train_images.sh`](https://github.com/yair-schiff/stochastic-orders-ICMN/blob/f8b6e8d2dee74ce65fc5ceeb594a3dccb3f1911c/run_wgan_train_images.sh#L14) and [`run_wgan_dominate_images.sh`](https://github.com/yair-schiff/stochastic-orders-ICMN/blob/f8b6e8d2dee74ce65fc5ceeb594a3dccb3f1911c/run_wgan_dominate_images.sh#L40).
 
 
 ## 1. Instructions to run 1D portfolio optimization
@@ -26,7 +26,7 @@ To run the GAN training using the Choquet-Toland (CT) distance use the shell scr
 ```shell
 sh run_choquet_train_distributions.sh
 ```
-Open this script and change `data` (Line 7) to one of `circle_of_gaussians`, `swiss_roll`, `image_point_cloud`.
+Open this script and change `data` ([Line 7](https://github.com/yair-schiff/stochastic-orders-ICMN/blob/f8b6e8d2dee74ce65fc5ceeb594a3dccb3f1911c/run_choquet_train_distributions.sh#L7)) to one of `circle_of_gaussians`, `swiss_roll`, `image_point_cloud`.
 
 ## 3. Baseline generator domination with VDC
 <p>
