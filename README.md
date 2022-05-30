@@ -57,7 +57,7 @@ For several of our generator, discriminator, and Choquet critics, we draw inspir
 3. https://github.com/CW-Huang/CP-Flow
 
 ## Citation:
-To cite our work please use: TODO: need bibtex citation here
+To cite our work, please use:
 ```
 @article{stochasticOrdersICMN,
   title={Learning with Stochastic Orders},
