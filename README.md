@@ -1,5 +1,5 @@
  # Learning with Stochastic Orders
-This repository implements the algorithms and experiments described in [Learning with Stochastic orders](TODO_need_link).
+This repository implements the algorithms and experiments described in [Learning with Stochastic orders](https://arxiv.org/abs/2205.13684).
 
 ## 0. Install
 To get started, create and activate the `conda` environment below:
@@ -59,9 +59,10 @@ For several of our generator, discriminator, and Choquet critics, we draw inspir
 ## Citation:
 To cite our work please use: TODO: need bibtex citation here
 ```
-@article{name,
+@article{stochasticOrdersICMN,
   title={Learning with Stochastic Orders},
   author={Domingo-Enrich, Carles and Schiff, Yair and Mroueh, Youssef},
+  journal={arXiv preprint arXiv:2205.13684},
   year={2022}
 }
 ```
