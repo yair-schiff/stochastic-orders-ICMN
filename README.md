@@ -59,10 +59,12 @@ For several of our generator, discriminator, and Choquet critics, we draw inspir
 ## Citation:
 To cite our work, please use:
 ```
-@article{stochasticOrdersICMN,
-  title={Learning with Stochastic Orders},
-  author={Domingo-Enrich, Carles and Schiff, Yair and Mroueh, Youssef},
-  journal={arXiv preprint arXiv:2205.13684},
-  year={2022}
+@inproceedings{
+domingo-enrich2023learning,
+title={Learning with Stochastic Orders},
+author={Carles Domingo-Enrich and Yair Schiff and Youssef Mroueh},
+booktitle={International Conference on Learning Representations},
+year={2023},
+url={https://openreview.net/forum?id=P3PJokAqGW}
 }
 ```
